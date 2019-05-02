@@ -25,7 +25,7 @@ class usuarios extends crud {
 
 	public function insert() {
        $sql = "INSERT INTO $this->table(nome, email) VALUES (:nome, :email)";
-       $statement = BD::prepare($sql);
+       $statement = DB::prepare($sql);
        $statement->bindParam(':nome', $this->nome);
        $statement->bindParam(':email', $this->email);
 

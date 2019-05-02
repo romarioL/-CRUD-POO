@@ -2,7 +2,7 @@
 
 require_once 'DB.php';
 
-abstract class crud  extends DB {
+abstract class crud  extends DB{
 
 	protected $table;
 
